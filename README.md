@@ -1,6 +1,6 @@
 # Postman API Automation — Restful Booker
 
-![Newman API Tests](https://github.com/danieloyebode/postman-restfulbooker-api/actions/workflows/newman.yml/badge.svg)
+![Newman API Tests](https://github.com/oyebodedaniel/postman-restfulbooker-api/actions/workflows/newman.yml/badge.svg)
 ![Node](https://img.shields.io/badge/node-%3E%3D20-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
@@ -61,7 +61,7 @@ postman-restfulbooker-api/
 ### Install
 
 ```bash
-git clone https://github.com/danieloyebode/postman-restfulbooker-api.git
+git clone https://github.com/oyebodedaniel/postman-restfulbooker-api.git
 cd postman-restfulbooker-api
 npm install
 ```
