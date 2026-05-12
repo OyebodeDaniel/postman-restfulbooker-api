@@ -1,0 +1,16 @@
+{
+  "name": "postman-restfulbooker-api",
+  "version": "1.0.0",
+  "description": "API automation test suite for Restful-Booker (https://restful-booker.herokuapp.com) covering full CRUD operations, auth token flow, and negative test cases. Built with Postman collections and executed via Newman CLI.",
+  "scripts": {
+    "test": "newman run RestfulBooker_API_Suite.postman_collection.json -e RestfulBooker.postman_environment.json --reporters cli,htmlextra --reporter-htmlextra-export reports/api-test-report.html --reporter-htmlextra-title 'Restful Booker API Test Report' --reporter-htmlextra-darkTheme",
+    "test:ci": "newman run RestfulBooker_API_Suite.postman_collection.json -e RestfulBooker.postman_environment.json --reporters cli,htmlextra,junit --reporter-htmlextra-export reports/api-test-report.html --reporter-junit-export reports/results.xml",
+    "test:verbose": "newman run RestfulBooker_API_Suite.postman_collection.json -e RestfulBooker.postman_environment.json --reporters cli --verbose"
+  },
+  "devDependencies": {
+    "newman": "^6.1.0",
+    "newman-reporter-htmlextra": "^1.23.0"
+  },
+  "author": "Daniel Oyebode",
+  "license": "MIT"
+}
